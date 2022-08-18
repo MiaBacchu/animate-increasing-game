@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<style>
+#container {
+  width: 500px;
+  height: 500px;
+  position: relative;
+  background: blueviolet;
+  margin: 15px auto;
+}
+#animate {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  position: absolute;
+  background-color: greenyellow;
+}
+#point {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background-color: red;
+}
+</style>
+<body style="background-color: gray ;"> 
+<div  style="text-align: center">
+    <button onclick="stopGame()">Stop Game</button>
+    <p id="timer">0</p>
+</div>
+<div id ="container">
+  <div id ="animate"></div>
+  <div id ="point"></div>
+</div>
+
+<div style="text-align: center;">
+    <button onclick="moveUp()">Up Move</button>
+    <br>
+    <button onclick="moveLeft()">Left Move</button>
+    <button onclick="moveRight()">Right Move</button>
+    <br>
+    <button onclick="moveDown()">Down Move</button>
+</div>
+
+<script src="/index.js"></script>
+
+</body>
+</html>
